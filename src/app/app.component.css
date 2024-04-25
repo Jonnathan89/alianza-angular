@@ -1,0 +1,52 @@
+
+
+/* layout.component.css */
+.container-la {
+  display: flex;
+  flex-direction: column; /* Para que los hijos se apilen verticalmente */
+  width: 100%;
+  height: 100%;
+    margin: 0;
+    padding: 0;
+   
+}
+  
+  .header {
+    width: 100%;    
+    height: auto;
+    
+  }
+  
+  .content {  
+    display: flex;
+    flex: 1;
+  }
+  
+  .menu {
+    flex: 0 0 13%; /* Ocupa el 20% del ancho */
+    height: 100%; /* Ocupa el 90% del alto de la pantalla */
+    background-color: #f0f0f0;
+  }
+  
+  .other-content {
+    flex: 2; /* Ocupa el espacio restante */
+    background-color: lightgray;
+    height: 100%;
+    padding-left: 3%;
+  
+  }
+  
+  /* Estilos para hacerlo responsive */
+  @media screen and (max-width: 768px) {
+    .container-la {
+      width: 30%;
+      height: 600px;
+      display: flex;
+      flex-direction: column; /* Para que los hijos se apilen verticalmente */
+    }
+  
+    .menu {
+      flex: 1; /* Ocupa el 100% del ancho en dispositivos móviles */
+      height: auto; /* Altura automática en dispositivos móviles */
+    }
+  }

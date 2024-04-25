@@ -1,0 +1,24 @@
+.container-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+ 
+    border-radius: 5px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    float: right;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+
+
+  

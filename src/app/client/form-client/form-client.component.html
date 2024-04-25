@@ -1,0 +1,40 @@
+<div class="container" #fmClose>
+  <h2>Formulario</h2>
+  <form [formGroup]="formularioC" (ngSubmit)="enviarFormulario()">
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input type="text" class="form-control" id="name" formControlName="name" >
+        <div class="text-danger" *ngIf="hasError('name' , 'required')" > Nombre requerido</div>
+        <div class="text-danger" *ngIf="hasError('name' , 'pattern')" > Ingrese su nombre y apellido separado de un espacio</div>
+      <div>
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" formControlName="email">
+      <div class="text-danger" *ngIf="hasError('email' , 'email')" > Ingrese por favor su correo</div>
+      <div >
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="text" class="form-control" id="phone" formControlName="phone">
+      <div class="text-danger" *ngIf="hasError('name' , 'pattern')" > Ingrese su numero de telefono</div>
+       <div>
+          
+        </div> 
+    </div>
+    <div class="form-group">
+      <label for="startDate">Fecha de inicio</label>
+      <input type="date" class="form-control" id="startDate" formControlName="startDate">
+      <div class="text-danger" *ngIf="hasError('name' , 'required')" > Ingrese la fecha</div>
+       <div >
+          
+        </div> 
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>

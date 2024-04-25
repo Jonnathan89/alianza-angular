@@ -1,0 +1,165 @@
+.container-content {
+    width: 99%;
+    height: 99%;
+
+    padding: 1%, 1%, 1%, 1%;
+}
+
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 2%;
+    margin-top: 1%;
+    font-size: 16px;
+    background-color: #0088cc;
+    color: white;
+    border-radius: 7px  7px  7px  7px;
+}
+
+
+.filter-container {
+    width: 95%;
+    height: 80%;
+
+    margin-top: 2%;
+    
+}
+
+
+
+@media screen and (min-width: 600px) {
+    .button-container {
+        flex-direction: row;
+    }
+
+    .button {
+        width: auto;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+    .button:last-child {
+        margin-right: 0;
+    }
+
+
+    .filter-container {
+        width: 95%;
+        height: auto;
+
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+
+    .filter-container-table {
+        width: 95%;
+        height: auto;
+  
+        margin-top: 2%;
+        
+    }
+
+    /* FORMULARIO */
+    
+    .formulario {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+      }
+      
+      /* Estilos del campo de entrada */
+      .input-text {
+       
+     
+        border-top-left-radius: 20px; /* Bordado ovalado */
+        border-bottom-left-radius: 20px; /* Bordado ovalado */
+        outline: none;
+        
+      }
+      
+      /* Estilos del botón */
+      .boton {
+        padding: 0.7% 1%;
+      
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-top-right-radius: 20px; /* Bordado ovalado */
+        border-bottom-right-radius: 20px; /* Bordado ovalado */
+      }
+      
+      /* Estilos del botón al pasar el ratón */
+      .boton:hover {
+        background-color: whitesmoke;
+      }
+      
+      /* Estilos para hacer el formulario responsive */
+      @media only screen and (max-width: 600px) {
+        .formulario {
+          flex-direction: column;
+          margin-left: 10%;
+        }
+      
+        .input-text {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+
+        .advance{            
+            background-color: #0088cc;
+            color: white;    
+          }
+      }
+
+      .advance{
+        padding: 0.7% 1%;  
+        background-color: #0088cc;
+        color: white;
+        margin-left: 5%;       
+        border-radius: 7px  7px  7px  7px;
+      }
+ 
+
+      .responsive-table {
+        width: 50%;
+        border-collapse: collapse;
+        background-color: white;
+      }
+      
+      .responsive-table th,
+      .responsive-table td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid black;
+      }
+      
+      /* Estilos para pantallas más pequeñas */
+      @media screen and (max-width: 600px) {
+        .responsive-table th,
+        .responsive-table td {
+          display: block;
+          width: 100%;
+        }
+      
+        .responsive-table td {
+          text-align: right; /* O ajusta según tu preferencia */
+        }
+
+        .responsive-table{
+          overflow-x: auto;
+        }
+        }
+
+
+    
+}
+
